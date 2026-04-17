@@ -111,24 +111,79 @@ text-decoration:none;
 
 <div class="products">
 
-<div class="card">
-<img src="A2 milk.png" style="width:100%;height:200px;object-fit:cover;border-radius:10px;">
-<h3>A2 Cow Milk</h3>
-<p>₹90 / litre</p>
-</div>
+<style>
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
 
-<div class="card">
-<img src="A2 ghee.png" style="width:100%;height:200px;object-fit:cover;border-radius:10px;">
-<h3>Desi Cow A2 Bilona Ghee</h3>
-<p>₹2000 / litre</p>
-</div>
+.card {
+  background: #f9f9f9;
+  border-radius: 12px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
 
-<div class="card">
-<img src="pure milk.png" style="width:100%;height:200px;object-fit:cover;border-radius:10px;">
-<h3>Pure Cow Milk</h3>
-<p>₹60 / litre</p>
-</div>
+.card:hover {
+  transform: translateY(-5px);
+}
 
+.image-box {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-box img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+.card h3 {
+  margin: 10px 0 5px;
+}
+
+.card p {
+  color: #2e7d32;
+  font-weight: bold;
+}
+</style>
+
+
+<div class="cards">
+
+  <div class="card">
+    <div class="image-box">
+      <img src="A2 milk.png">
+    </div>
+    <h3>A2 Cow Milk</h3>
+    <p>₹90 / litre</p>
+  </div>
+
+  <div class="card">
+    <div class="image-box">
+      <img src="A2 ghee.png">
+    </div>
+    <h3>Desi Cow A2 Bilona Ghee</h3>
+    <p>₹2000 / litre</p>
+  </div>
+
+  <div class="card">
+    <div class="image-box">
+      <img src="pure milk.png">
+    </div>
+    <h3>Pure Cow Milk</h3>
+    <p>₹60 / litre</p>
+  </div>
+
+</div>
 </div>
 </div>
 

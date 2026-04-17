@@ -16,11 +16,15 @@ text-align:center;
 }
 
 .banner {
-background:url('banner1.png');
-background-size:cover;
-color:white;
-text-align:center;
-padding:100px 20px;
+  background: url('banner1.png') center/cover no-repeat;
+  height: 70vh; /* controls visible area */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+  position: relative;
 }
 
 .banner h1 {font-size:40px;margin:0;}
